@@ -7,10 +7,14 @@
   },
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "c8 mocha \"test/**/*.test.js\""
   },
   "devDependencies": {
+    "c8": "^8.0.1",
     "jest": "28.1.1",
-    "mocha": "10.0.0"
+    "mocha": "10.0.0",
+    "sinon": "^16.0.0",
+    "sinon-chai": "^3.7.0",
+    "chai": "^4.3.10"
   }
 }
