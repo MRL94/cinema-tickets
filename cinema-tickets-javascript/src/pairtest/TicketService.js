@@ -37,7 +37,6 @@ export default class TicketService {
     if(typeof accountId !== 'number' || accountId < 0) {
       throw new InvalidPurchaseException('AccountId must be a non-negative number');
     }
-    return accountId;
   }
 
   #validateTicketRequest(ticketTypeRequests) {
